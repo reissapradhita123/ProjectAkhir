@@ -1,0 +1,36 @@
+<h3 mat-dialog-title>
+    Detail Produk
+ </h3>
+ <div mat-dialog-content>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Nama</mat-label>
+        <input matInput [(ngModel)]="data.name">      
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>NISN</mat-label>
+        <input matInput [(ngModel)]="data.nisn" >     
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Kelas</mat-label>
+        <input matInput [(ngModel)]="data.class" >     
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Jam</mat-label>
+        <input matInput [(ngModel)]="data.time" >     
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Mata Pelajaran</mat-label>
+        <input matInput [(ngModel)]="data.mapel" >     
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Guru</mat-label>
+        <input matInput [(ngModel)]="data.teacher" >      
+    </mat-form-field>
+ </div>
+ <div mat-dialog-actions align="end">
+<button mat-button mat-dialog-close>Batal</button>
+<button mat-flat-button (click)="saveData()" [disabled]="loading">{{loading ? 'Menyimpan..':'Simpan'}}</button>
+</div>
+    
+ 
+ 

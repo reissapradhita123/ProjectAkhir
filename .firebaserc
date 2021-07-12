@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "project-akhir-71245": {
+      "hosting": {
+        "my-app2": [
+          "project-akhir-71245"
+        ]
+      }
+    }
+  }
+}
